@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class MlfqSimulatorApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(MlfqSimulatorApp.class.getResource("mlfq-simulator-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 700);
+        stage.setTitle("多级反馈队列 (MLFQ) 调度模拟器");
         stage.setScene(scene);
         stage.show();
     }
