@@ -74,30 +74,6 @@ mlfq/
 * Maven 或 Gradle (推荐用于项目管理和依赖管理)
 * 任何支持 JavaFX 开发的集成开发环境 (IDE)，如 IntelliJ IDEA, Eclipse。
 
-## 设置与运行
-
-以下是在 IntelliJ IDEA 中设置和运行项目的步骤：
-
-1. **克隆或下载项目：** 将项目文件下载到您的本地机器。
-
-2. **在 IDE 中打开项目：**
-   * 打开 IntelliJ IDEA。
-   * 选择 `File` -> `Open`，然后导航到您下载的项目根目录并打开 `pom.xml` (如果是 Maven 项目)。
-   * IntelliJ IDEA 会自动检测 Maven 项目并导入依赖。
-
-3. **配置 JavaFX (如果需要)：**
-   * 对于 Maven 项目，JavaFX 依赖通常在 `pom.xml` 中配置好。如果遇到 JavaFX 相关的错误（例如 `javafx.graphics` 模块找不到），您可能需要检查您的 Maven 配置或手动添加 JavaFX SDK 到您的模块路径。
-
-4. **清理并重建项目：**
-   * 在 IDE 菜单中，选择 `Build` -> `Clean Project`。
-   * 然后选择 `Build` -> `Rebuild Project`。这能确保所有文件，特别是 FXML 和资源文件，被正确编译和打包。
-
-5. **运行应用程序：**
-   * 找到 `src/main/java/com/mlfq/mlfq/MlfqSimulatorApp.java` 文件。
-   * 右键点击 `MlfqSimulatorApp.java` 文件，选择 `Run 'MlfqSimulatorApp.main()'`。
-
-应用程序的主界面应该会弹出。
-
 ## 使用说明
 
 1. **添加进程：**
